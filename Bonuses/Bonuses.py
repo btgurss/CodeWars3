@@ -1,4 +1,5 @@
 # Function to determine bonus amounts based on days taken off
+# Not Finished
 
 def bonus(arr, s):
     totalHours = sum(arr)
