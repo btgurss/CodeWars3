@@ -1,9 +1,19 @@
+# Function to determine the number of sets of 3 with equal parts
+
 def solve(arr):
+    # Setting counter
     count = 0
     
+    # Loop to look through all numbers in array
     for num in arr:
+
+        #Counter that resets at beginning of each input
         adder = 1
+
+        # Loop to go through all number of array
         while(adder < arr[len(arr)-1]):
+
+            # Checking for set of 3
             if (num + adder) in arr and (num + adder + adder) in arr:
                 count += 1
             adder += 1
